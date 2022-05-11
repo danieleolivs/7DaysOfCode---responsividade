@@ -1,0 +1,289 @@
+@media(min-width:1025px){
+    .clientes{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+	    grid-gap: 10px;
+    }
+}
+
+@media(min-width:600px){
+
+    .container{
+        grid-area:conteudo
+    }
+
+    .clientes{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+	    grid-gap: 10px;
+    }
+
+    .card-paciente{
+        width:35rem;
+        height:20rem;
+    }
+
+    .head{
+        padding:2.5rem;
+    }
+
+    .foto-card{
+        width:4.2rem;
+        height:4.2rem
+    }
+
+    .mensagem{
+        width:4.2rem;
+        height:4.2rem;
+    }
+
+    .texto-card{
+        margin-left:-5rem
+    }
+
+    #remoto button{
+        width:15rem;
+        height:4.8rem;
+    }
+
+    .botao{
+        padding:1rem 2rem;
+    }
+
+    body{
+        display:grid;
+        grid-template-columns:5% 95%;
+        grid-template-areas:
+        'menu conteudo' 
+    }
+
+    .menu{
+        grid-area:menu;
+        background-color:var(--fundo);
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.06);
+    }
+
+    .mobile{
+        display:none
+    }
+
+    input#control-nav-menu {
+        visibility: visible;
+        position: absolute;
+        left: -9999px;
+        opacity: 0;
+    }
+
+    .control-nav-menu{
+        position: fixed;
+        display:block;
+        left:.8rem;
+        top:4rem;
+        width: 2rem;
+        padding:2px 0;
+        border: solid var(--letra);
+        border-width: 3px 0;
+        cursor: pointer;
+        
+    }
+
+    .control-nav-menu:before {
+        content: "";
+        display: block;
+        height: 3px;
+        background: var(--letra)
+    }
+
+    .control-nav-menu-close{
+        position:fixed;
+        background-color:var(--fundo);
+        width:30rem;
+        z-index:1;
+        opacity:.99;
+        display:block;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+        transition:all 500ms ease;
+        transform:translate(-100%,0)
+    }
+
+
+    .menu nav{
+        position:fixed;
+        top:6rem;
+        left:-12rem;
+        z-index:2;
+        transition: all 500ms ease;
+        transform:translate(30%,0)
+    }
+
+    .menu nav button:hover{
+        background-color:#fff;
+        border-radius:0 .8rem .8rem 0
+    }
+
+    #control-nav-menu:checked ~ nav{
+        transform:translate(100%,0);
+        
+    }
+
+    #control-nav-menu:checked ~ .control-nav-menu-close{
+        transform:translate(-50%,0);
+        
+    }
+
+    .menu button{
+        display:flex;
+        flex-direction:row-reverse;
+        justify-content:space-between;
+        width:12rem;
+        padding:.8rem;
+        font-size:1.4rem
+    }
+
+    .menu button img{
+        margin-left:1rem
+    }
+
+    .botao-flutuante{
+        display:none
+    }
+
+    .formulario label{
+        font-size:1.4rem;
+        color:var(--label)
+    }
+
+    .formulario input, select, option{
+        height:3rem;
+        width:100%;
+        border-radius:.5rem;
+        padding:.8rem;
+        font-size:1rem;
+        color:var(--label-text);
+        margin: 1rem 0 1rem 0
+    }
+
+    .formulario-botao{
+        display:flex;
+        align-items:center;
+        justify-content:flex-end;
+
+        margin-top: 1rem;
+    }
+
+    .formulario button{
+        background-color:var(--azul);
+        width:10rem;
+        height:3rem;
+        border-radius:.5rem;
+        font-size:1rem;
+        color:var(--fundo)
+    }
+
+    .colunas{
+        display:grid;
+        grid-template-areas: 
+        'col-1 col-2';
+        gap:2rem
+    }
+
+    .col-1{
+        grid-area:col-1;
+        
+    }
+
+    .col-2{
+        grid-area:col-2
+    }
+
+
+}
+
+@media(max-width:600px){
+    .clientes{
+        display:block
+    }
+
+    .card-paciente{
+        width:32.8rem;
+        height:17rem;
+    }
+
+    .head{
+        padding:1.6rem;
+    }
+
+    .foto-card{
+        width:3.2rem;
+        height:3.2rem
+    }
+
+    .mensagem{
+        width:3.2rem;
+        height:3.2rem;
+    }
+
+    .texto-card{
+        margin-left:-9rem
+    }
+
+    #remoto button{
+        width:13.9rem;
+        height:4.8rem;
+    }
+
+    .botao{
+        padding:.8rem 1.6rem;
+        
+    }
+
+    .menu input, label{
+        display:none
+    }
+
+    .menu{
+        position:fixed;
+        bottom:0;
+        width:100%;
+        height:5.8rem;
+        border-radius:1.2rem 1.2rem 0 0;
+        background-color:var(--fundo);
+    
+        box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.06);
+    
+    }
+
+    .menu nav{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:.8rem 1.4rem;
+    }
+
+    
+    .menu button{
+        width:5rem;
+        font-size:1.2rem
+    }
+
+    .botao-flutuante{
+        bottom:7.4rem;
+    }
+
+    .web{
+        display:none
+    }
+    
+    .botao-flutuante nav{
+        bottom:14rem;
+    }
+
+    .formulario-titulo, .formulario{
+        display:none
+    }
+
+}
