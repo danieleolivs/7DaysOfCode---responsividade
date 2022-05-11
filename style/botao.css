@@ -1,0 +1,51 @@
+button:hover{
+    cursor:pointer;
+    transition:.2s;
+    filter:brightness(.9)
+}
+
+.botao{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.botao button{
+    border-radius:.8rem;
+    font-size:1.4rem;
+    font-weight:500;
+    color:var(--fundo);
+}
+
+#remoto .video{
+    background-color:var(--amarelo)
+}
+
+#remoto .audio{
+    background-color:transparent;
+    border:1px solid var(--borda);
+    color:var(--letra)
+}
+
+#local button{
+    width:100%;
+    height:4.8rem;
+    background-color:var(--azul)
+}
+
+.menu button{
+    background-color:transparent;
+    flex-wrap:wrap;
+    color:var(--letra);
+}
+
+.menu button img{
+    width:2rem;
+    height:2rem;
+    margin-bottom:.5rem;
+    color:var(--azul)
+}
+
+.menu button:nth-child(1){
+    color:var(--azul)
+}

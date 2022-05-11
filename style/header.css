@@ -1,0 +1,32 @@
+
+.card-menu{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    margin-left:1.6rem
+}
+
+.foto-menu{
+    width: 5.7em;
+    height:5.7rem;
+}
+
+.foto-menu > img, .foto-card > img{
+    height:100%;
+    border-radius:50%;
+}
+
+.texto-menu{
+    margin-left: 6rem;
+}
+
+.texto-menu h1{
+    font-weight:700;
+    font-size:2.2rem
+}
+
+.texto-menu span{
+    font-weight:400;
+    font-size:1.4rem;
+    color:var(--detalhes)
+}
