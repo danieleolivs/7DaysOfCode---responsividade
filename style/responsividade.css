@@ -198,9 +198,9 @@
 
 @media(min-width:1025px){
     .clientes{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-	    grid-gap: 10px;
+        display:grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+	    grid-gap: 10px !important;;
     }
 }
 
